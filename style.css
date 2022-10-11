@@ -105,6 +105,10 @@ main div > picture{
     text-align: center;
 }
 
+main div > article > picture > img{
+    margin-bottom: 18px;
+}
+
 header{
     background-color: var(--cor0);
     text-align: center;
