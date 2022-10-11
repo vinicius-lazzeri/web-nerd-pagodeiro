@@ -184,6 +184,48 @@ div.video > iframe{
     height: 90%;
 }
 
+main div > form.formulario{
+    background-color: rgba(0, 0, 0, 0.185);
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: .8em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.486);
+}
+
+main div > form.formulario > h3{
+    font-family: 'Nunito';
+    font-weight: bold;
+    color: var(--cor3);
+    padding: 10px;
+}
+
+main div > form.formulario > button{
+    font-family: 'Nunito';
+    font-weight: bold;
+    padding: 6px 18px;
+    color: var(--cor0);
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.432);
+    margin-top: 1em;
+    transition-duration: .4s;
+}
+
+main div > form.formulario > button:hover{
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+
+main div > form.formulario > h4{
+    font-family: 'Nunito';
+    font-weight: bold;
+    padding: 10px;
+}
+
 footer{
     background-color: var(--cor3);
     text-align: center;
