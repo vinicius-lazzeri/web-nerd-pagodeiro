@@ -202,12 +202,33 @@ main div > form.formulario > h3{
     padding: 10px;
 }
 
+main div > form.formulario > input{
+    background-color: var(--cor1);
+    border: none;
+    color: var(--cor0);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.432);
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main div > form.formulario > input::placeholder{
+    color: var(--cor0);
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
 main div > form.formulario > button{
     font-family: 'Nunito';
     font-weight: bold;
-    padding: 6px 18px;
+    font-size: 1.2em;
+    padding: 6px 26px;
     color: var(--cor0);
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     border: none;
     border-radius: 8px;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.432);
@@ -224,7 +245,74 @@ main div > form.formulario > h4{
     font-family: 'Nunito';
     font-weight: bold;
     padding: 10px;
+    color: var(--cor3);
 }
+
+main div > form.formulario > h4 > a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+main div > form.formulario > h4 > a:hover{
+    text-decoration: underline;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    position: relative;
+    background-color: var(--cor1);
+    color: var(--cor0);
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1.1em;
+    border: 2px solid var(--cor0);
+    margin-bottom: 2px;
+    border-radius: 6px;
+    padding: 8px 26px;
+    display: flex;
+    
+}
+
+label:before{
+    content: "";
+    height: 22px;
+    width: 22px;
+    border: 3px solid var(--cor0);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+input[type="radio"]:checked + label{
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
+
+input[type="radio"]:checked + label:before{
+    height: 10px;
+    width: 10px;
+    border: 10px solid var(--cor0);
+    background-color: var(--cor1);
+}
+
+input[type="date"]{
+    text-align: center;
+    color: var(--cor0);
+    font-family: 'Nunito';
+    font-size: 1em;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: var(--cor0);
+    border-radius: 6px;
+    padding: 4px;
+    cursor: pointer;
+}
+
 
 footer{
     background-color: var(--cor3);
