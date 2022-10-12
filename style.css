@@ -195,6 +195,13 @@ main div > form.formulario{
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.486);
 }
 
+main > form.formulario > h3{
+    font-family: 'Nunito';
+    font-weight: bold;
+    color: var(--cor3);
+    padding: 10px;
+}
+
 main div > form.formulario > h3{
     font-family: 'Nunito';
     font-weight: bold;
